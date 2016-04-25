@@ -1,9 +1,11 @@
 <template name="modal">
   <div class="modal {{ _name }}" style="z-index: 1000{{ index }}">
     <div class="modal-dialog">
-      <a href="#" class="close">
-        <i class="fa fa-times"></i>
-      </a>
+      {{# unless isConfirm }}
+        <a href="#" class="js-close">
+          <i class="fa fa-times"></i>
+        </a>
+      {{/unless}}
       <div class="modal-content">
         {{ > Template.dynamic template=_name data=context }}
       </div>
