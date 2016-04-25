@@ -1,6 +1,6 @@
 Package.describe({
   name: 'pmteor:modal',
-  version: '0.0.1',
+  version: '0.0.2',
   summary: 'Modal package for Meteor.',
   git: 'https://github.com/pmteor/meteor-modal.git',
   documentation: 'README.md'
