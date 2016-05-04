@@ -22,9 +22,7 @@ Package.onUse(function(api) {
   ]);
 
   // LESS
-  api.addFiles('styles.less', 'client', {
-    isImport: true
-  });
+  api.addFiles('styles.less', 'client');
 
   // HTML
   api.addFiles('templates.html', 'client');

@@ -32,6 +32,17 @@ class ModalClass {
         this.confirm(instance, this);
       }
     });
+
+    Tracker.autorun(() => {
+      const list = this._list.array();
+      const $body = $('body');
+
+      if (list.length) {
+        return $body.addClass('modal-body');
+      }
+
+      return $body.removeClass('modal-body');
+    });
   }
 
   getModalName(name) {
