@@ -49,7 +49,7 @@ class ModalClass {
     return `${name}Modal`;
   }
 
-  open(name, close) {
+  open(name, close, body) {
     const self = this;
     const _name = self.getModalName(name);
 
@@ -71,7 +71,7 @@ class ModalClass {
           isConfirm: _.has(this, 'confirm'),
           index: self._list.length
         }
-      }, document.body));
+      }, body ? $(body).get() : document.body));
     }
   }
 
